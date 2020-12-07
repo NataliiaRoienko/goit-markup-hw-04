@@ -2,6 +2,7 @@
   --main-font: "Roboto", sans-serif;
   --secondary-font: "Raleway", sans-serif;
   --accent-color: #2196f3;
+  --gradient-color: rgba(47, 48, 58, 0.4);
 }
 
 body {
@@ -144,17 +145,26 @@ img {
 
 /* ========== HERO ========== */
 
-.hero .container {
-  padding-top: 200px;
-  padding-bottom: 200px;
-}
-
-.hero,
 .contact-info {
   background: #2f303a;
-  background-image: url(../images/bg.jpg);
+}
+
+.hero {
+  width: 1600px;
+  height: 600px;
+  padding-top: 200px;
+  padding-bottom: 200px;
+  margin-left: auto;
+  margin-right: auto;
+  background: #2f303a;
+  background-image: linear-gradient(
+      var(--gradient-color),
+      var(--gradient-color)
+    ),
+    url(../images/bg.jpg);
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
   text-align: center;
 }
 
@@ -233,6 +243,21 @@ img {
   color: #212121;
 }
 
+.block-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 120px;
+  margin-bottom: 30px;
+  background-color: #f5f4fa;
+  border-radius: 4px;
+}
+
+.advantages-icon {
+  width: 70;
+  height: 70;
+}
+
 .about-work {
   padding-bottom: 94px;
 }
@@ -244,7 +269,7 @@ img {
 .about-advantages-desc {
   font-weight: 400;
   font-size: 14px;
-  line-height: 1.71;
+  line-height: 1.72;
   letter-spacing: 0.03em;
   color: #757575;
 }
