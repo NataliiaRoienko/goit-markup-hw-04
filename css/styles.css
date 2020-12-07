@@ -322,6 +322,34 @@ img {
   color: #757575;
 }
 
+.social-info {
+  padding-left: 32px;
+  padding-right: 32px;
+  padding-bottom: 30px;
+}
+
+.social-info-list {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  list-style: none;
+}
+
+.social-info-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  text-decoration: none;
+  border-radius: 50%;
+  color: #afb1b8;
+}
+
+.social-info-item:not(:last-child) {
+  margin-right: 10px;
+}
+
 /* ========== END OTHER SECTIONS ========== */
 
 /* ========== FOOTER ========== */
