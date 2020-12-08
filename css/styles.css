@@ -3,6 +3,7 @@
   --secondary-font: "Raleway", sans-serif;
   --accent-color: #2196f3;
   --gradient-color: rgba(47, 48, 58, 0.4);
+  --white-color: #fff;
 }
 
 body {
@@ -343,18 +344,84 @@ img {
   height: 44px;
   text-decoration: none;
   border-radius: 50%;
-  color: #afb1b8;
 }
 
 .social-info-item:not(:last-child) {
   margin-right: 10px;
 }
 
+.social-info-link:hover,
+.social-info-link:focus {
+  background-color: var(--accent-color);
+}
+
+.social-link {
+  fill: #afb1b8;
+}
+
+.social-info-link:hover .social-link,
+.social-info-link:focus .social-link {
+  fill: var(--white-color);
+}
+
+.clients {
+  background: #fff;
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.clients-list {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+}
+
+.clients-item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.clients-icon {
+  fill: #afb1b8;
+}
+
+.clients-link:hover .clients-icon,
+.clients-link:focus .clients-icon {
+  fill: var(--accent-color);
+}
+
+.clients-link:hover,
+.clients-link:focus {
+  border-color: var(--accent-color);
+}
+
+.clients-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 170px;
+  height: 90px;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+  text-decoration: none;
+}
+
 /* ========== END OTHER SECTIONS ========== */
 
 /* ========== FOOTER ========== */
 
+.footer .container {
+  display: flex;
+  align-items: baseline;
+}
+
+.contact-footer {
+  display: flex;
+  flex-direction: column;
+  margin-right: 70px;
+}
+
 .contact-info {
+  display: flex;
   padding-top: 60px;
   padding-bottom: 60px;
 }
@@ -416,6 +483,47 @@ img {
   clip: rect(0 0 0 0);
   clip-path: inset(50%);
   margin: -1px;
+}
+
+.social-footer {
+  width: 206px;
+}
+
+.social-footer-desc {
+  margin-bottom: 20px;
+  color: var(--white-color);
+  text-transform: uppercase;
+  font-size: 14px;
+  line-height: 1.14;
+}
+
+.social-footer-list {
+  display: flex;
+  list-style: none;
+}
+
+.social-footer-item:not(:last-child) {
+  margin-right: 10px;
+}
+
+.social-footer-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.1);
+  color: var(--white-color);
+}
+
+.social-footer-icon {
+  fill: currentColor;
+}
+
+.social-footer-link:hover,
+.social-footer-link:focus {
+  background-color: var(--accent-color);
 }
 
 /* ========== END FOOTER ========== */
